@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — NSCCR QuickBooks Connector</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; }
+  a.back { display: inline-block; margin-bottom: 1.5rem; }
+  footer { margin-top: 3rem; color: #888; font-size: .85rem; border-top: 1px solid #ccc; padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">&larr; Home</a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: June 15, 2026</p>
+
+  <p>This Privacy Policy describes how the <strong>NSCCR QuickBooks Connector</strong> ("the App")
+  handles data. The App is a private, self-hosted tool operated by NSCCR ("we", "us") for its own
+  internal bookkeeping. It is not offered to, or used by, the public.</p>
+
+  <h2>1. Who operates the App</h2>
+  <p>The App is operated solely by NSCCR, North Vancouver, British Columbia, Canada.
+  Contact: <a href="mailto:shane@nsccr.ca">shane@nsccr.ca</a>.</p>
+
+  <h2>2. What data the App accesses</h2>
+  <p>When connected to our QuickBooks Online company, the App may read and (only when the operator
+  explicitly enables write access) modify accounting data via Intuit's QuickBooks Online API, including:
+  company information, customers, invoices, payments, and accounts-receivable reports. The App accesses
+  only the single QuickBooks Online company that the operator authorizes — our own.</p>
+
+  <h2>3. How data is used</h2>
+  <p>Data is used exclusively to help the operator review and manage NSCCR's own books (for example,
+  listing invoices, checking who owes money, and recording payments). The App performs no analytics,
+  advertising, profiling, or any processing of other parties' data.</p>
+
+  <h2>4. Where data is stored</h2>
+  <p>The App runs on the operator's own computer. OAuth credentials (client ID/secret and refresh/access
+  tokens) are stored locally in configuration files (<code>.env</code> and <code>tokens.json</code>) on
+  that machine. QuickBooks records are fetched on demand and are not retained in any separate database;
+  any copies exist only transiently in memory or in the operator's own working files.</p>
+
+  <h2>5. Data sharing</h2>
+  <p>We do <strong>not</strong> sell, rent, share, or otherwise disclose QuickBooks data to any third
+  party. The only external service the App communicates with is Intuit's QuickBooks Online API, over an
+  encrypted (HTTPS/TLS) connection, in order to provide the App's functionality.</p>
+
+  <h2>6. Data retention &amp; deletion</h2>
+  <p>Stored credentials remain on the operator's machine until deleted. The operator can revoke access at
+  any time by disconnecting the App from within QuickBooks Online and deleting the local
+  <code>.env</code> and <code>tokens.json</code> files. See the
+  <a href="disconnect.html">Disconnect</a> page.</p>
+
+  <h2>7. Security</h2>
+  <p>Credentials are kept in local files that are excluded from version control and not transmitted
+  anywhere except to Intuit for authentication. Access tokens are short-lived and refreshed
+  automatically; refresh tokens rotate on use. The operator is responsible for the physical and account
+  security of the machine the App runs on.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>The App is a business bookkeeping tool and is not directed to children.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this URL with a revised "Last updated"
+  date.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:shane@nsccr.ca">shane@nsccr.ca</a>.</p>
+
+  <footer>
+    NSCCR QuickBooks Connector · Private application · This document is a plain-English policy for a
+    single-company internal integration and is not legal advice.
+  </footer>
+</body>
+</html>

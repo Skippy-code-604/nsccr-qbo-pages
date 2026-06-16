@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch — NSCCR QuickBooks Connector</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; }
+  a.back { display: inline-block; margin-bottom: 1.5rem; }
+  ol { padding-left: 1.25rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; }
+  footer { margin-top: 3rem; color: #888; font-size: .85rem; border-top: 1px solid #ccc; padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">&larr; Home</a>
+  <h1>Launch</h1>
+  <p>The NSCCR QuickBooks Connector is a private, self-hosted application — there is no hosted web app to
+  sign in to. It runs locally on the operator's own computer and is launched from a command line.</p>
+
+  <h2>How it runs</h2>
+  <ol>
+    <li>Configure credentials in the local <code>.env</code> file.</li>
+    <li>Start the server: <code>npm start</code>.</li>
+    <li>It connects to the authorized QuickBooks Online company through Intuit's OAuth 2.0 flow and
+        operates over the standard QuickBooks Online API.</li>
+  </ol>
+  <p>Because the App is single-company and self-hosted, this page exists to satisfy the Launch URL field
+  in the Intuit Developer app configuration; it is not an interactive sign-in page.</p>
+
+  <p>To revoke access, see the <a href="disconnect.html">Disconnect</a> page.</p>
+
+  <footer>NSCCR QuickBooks Connector · Private application · Last updated June 15, 2026</footer>
+</body>
+</html>
